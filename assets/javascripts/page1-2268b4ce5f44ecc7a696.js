@@ -1,0 +1,1 @@
+webpackJsonp([0],[function(e,n,t){e.exports=t(1)},function(e,n,t){"use strict";var o=t(2);console.log(o("page1.js loaded"));var s=document.getElementById("button"),a=function(){t.e(1,function(){var e=t(3);alert(o(e))})};console.log("\n  asset references like this one:\n    assets/images/gulp-743c01b8.png\n  get updated in js too!"),s.addEventListener("click",a)}]);
