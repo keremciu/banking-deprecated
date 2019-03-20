@@ -1,0 +1,54 @@
+/// Sass documents test
+table.table.table-styled.table-striped
+	border-collapse: separate
+	border-spacing: 0px 8px
+	thead,tfoot
+		tr
+			th,td
+				padding: 10px 14px
+				border: none
+				border: 1px solid #004852
+				border-left-width: 0px
+				border-right-width: 0px
+				color: white
+				box-shadow: 0px 1px 1px rgba(color(primary,dark), .3), inset 0px 1px 0px lighten(#4e6770, 15%)
+				+linearGradient(#4e6770,#004852)
+				font-weight: 900
+			th.left,td.left
+				border-left-width: 1px
+				+border-left-radius(6px)
+			th.right,td.right
+				border-right-width: 1px
+				+border-right-radius(6px)
+
+	tbody
+		tr
+			td
+				padding: 10px 14px
+				border: none
+				border: 1px solid #d1d1d1
+				border-left-width: 0px
+				border-right-width: 0px
+				box-shadow: 0px 1px 1px darken(#ececec, 5%), inset 0px 1px 0px lighten(#ececec, 10%)
+				+linearGradient(#ececec,#e6e6e7)
+				font-weight: bold
+			td.left
+				border-left-width: 1px
+				+border-left-radius(6px)
+			td.right
+				border-right-width: 1px
+				+border-right-radius(6px)
+
+		tr:nth-of-type(even)
+			td
+				border-color: #d9ac8e
+				box-shadow: 0px 1px 1px darken(#d9ac8e, 5%), inset 0px 1px 0px lighten($require-color, 10%)
+				+linearGradient($require-color,darken($require-color, 8%))
+
+
+table.table.table-styled.table-document-list
+	tbody
+		tr
+			td
+				line-height: 36px
+				font-size: 13px

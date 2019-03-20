@@ -1,0 +1,12 @@
++font-face(FSAlbert, '../fonts/fsalbert-webfont')
++font-face(FSAlbert, '../fonts/fsalbert-bold-webfont', bold)
++font-face(FSAlbert, '../fonts/fsalbert-extrabold-webfont', 900)
+
+body
+  +font-smoothing // <- _mixins.scss
+  background: url('../images/background.png') no-repeat
+  background-size: 100% 100%
+
+.screenreader
+  clip: rect(1px, 1px, 1px, 1px)
+  position: absolute !important

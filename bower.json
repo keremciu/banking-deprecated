@@ -1,0 +1,39 @@
+{
+  "name": "HomeBanking",
+  "version": "0.0.1",
+  "homepage": "https://github.com/keremciu/alj-homebanking",
+  "description": "bower file",
+  "keywords": [
+    "homebanking",
+    "bower"
+  ],
+  "authors": [
+    "kerem.ws"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap-sass": "~3.3.5",
+    "tock": "~1.0.8",
+    "moment": "~2.10.6",
+    "eonasdan-bootstrap-datetimepicker": "~4.17.35",
+    "ladda": "~0.9.8",
+    "snap.svg": "~0.4.1",
+    "vanilla-masker": "~1.1.0",
+    "fontawesome": "~4.4.0"
+  },
+  "overrides": {
+    "moment": {
+      "main": [
+        "min/moment.min.js",
+        "locale/tr.js"
+      ]
+    }
+  }
+}

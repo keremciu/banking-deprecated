@@ -1,0 +1,61 @@
+{
+	"sozlesme_data": [
+		{ 
+	      	"id": "sozlesmeno",
+	      	"label": "Sözleşme No",
+	      	"type": "select"
+	    },
+	    {
+	    	"id": "kredistatusu",
+	    	"label": "Kredi Statüsü",
+	    	"type": "text",
+	    	"state": "readonly"
+	    },
+	    {
+	    	"id": "toplamkreditutari",
+	    	"label": "Toplam Kredi Tutarı",
+	    	"type": "text",
+	    	"state": "readonly",
+	    	"addon": "USD"
+	    },
+	    {
+	    	"id": "gecikmisgunsayisi",
+	    	"label": "Gecikmiş Gün Sayısı",
+	    	"type": "text",
+	    	"state": "readonly"
+	    },
+	    {
+	    	"id": "taksittarihi",
+	    	"label": "Taksit Tarihi",
+	    	"type": "text",
+	    	"state": "readonly"
+	    },
+	    {
+	    	"id": "gecikmisborctutari",
+	    	"label": "Gecikmiş Borç Tutarı",
+	    	"type": "text",
+	    	"state": "readonly"
+	    },
+	    {
+	    	"id": "taksittutari",
+	    	"label": "Taksit Tutarı",
+	    	"type": "text",
+	    	"state": "readonly",
+	    	"addon": "USD"
+	    },
+	    {
+	    	"id": "vadekalanvade",
+	    	"label": "Vade / Kalan Vade",
+	    	"type": "text",
+	    	"state": "readonly"
+	    },
+	    {
+	    	"id": "bayi",
+	    	"label": "Bayi",
+	    	"type": "text",
+	    	"state": "readonly",
+	    	"width": "full",
+	    	"value": "DERİNDERE MOTORLU ARAÇLAR SANAYİ VE TİCARET ANONİM ŞİRKETİ"
+	    }
+	]
+}

@@ -1,0 +1,188 @@
+/*!
+ * Overrided datepicker
+ * ALJ Finans owned style -datepicker
+ * https://github.com/Eonasdan/bootstrap-datetimepicker/
+ */
+$bs-datetimepicker-timepicker-font-size: 12px;
+$bs-datetimepicker-active-bg: $btn-primary-bg;
+$bs-datetimepicker-active-color: $btn-primary-color;
+$bs-datetimepicker-border-radius: 0px;
+$bs-datetimepicker-btn-hover-bg: #273339;
+$bs-datetimepicker-disabled-color: $gray-light;
+$bs-datetimepicker-alternate-color: $gray-light;
+$bs-datetimepicker-secondary-border-color: #415A62;
+$bs-datetimepicker-secondary-border-color-rgba: rgba(0, 0, 0, 0.2);
+$bs-datetimepicker-primary-border-color: white;
+$bs-datetimepicker-text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+
+.bootstrap-datetimepicker-widget {
+
+	&.dropdown-menu {
+		padding: 0px;
+		z-index: 9999;
+	}
+
+	.picker-switch {
+        text-align: center;
+
+        &::after {
+            @extend .sr-only;
+            content: "Toggle Date and Time Screens";
+        }
+
+        table {
+        	width: 100%;
+	        td {
+	            padding: 0;
+	            margin: 0;
+	            height: auto;
+	            width: auto;
+	            line-height: inherit;
+
+	            span {
+	                line-height: 2.5;
+	                height: 2.5em;
+	                width: 100%;
+	            }
+	        }	
+        }
+    }
+
+    .list-unstyled {
+        margin: 0;
+    }
+
+	table {
+		& td,
+		& th {
+			text-align: center;
+		}
+
+		& th {
+			@include linearGradient(#36444a,#273339);
+			border-top: 1px solid #415a63;
+			border-bottom: 1px solid #415a63;
+			box-shadow: inset 0px 1px 0px lighten(#36444a, 15%);
+			color: white;
+			height: 32px;
+			line-height: 32px;
+			width: 20px;
+
+			&.dow {
+			  box-shadow: none;
+			  border: none;
+			  height: 20px;
+			  line-height: 20px;
+			  font-size: 9px;
+			  text-transform: uppercase;
+			  @include linearGradient(#8ec1c6,#508e97);
+			}
+
+			&.picker-switch {
+				width: 145px;
+			}
+
+			&.disabled,
+			&.disabled:hover {
+				//background: none;
+				color: $bs-datetimepicker-disabled-color;
+				cursor: not-allowed;
+			}
+		}
+
+		& thead tr:first-child th {
+			cursor: pointer;
+
+			&:hover {
+				background: $bs-datetimepicker-btn-hover-bg;
+			}
+		}
+
+		& td {
+			height: 54px;
+			line-height: 54px;
+			width: 54px;
+
+			&.cw {
+				font-size: .8em;
+				height: 20px;
+				line-height: 20px;
+				color: $bs-datetimepicker-alternate-color;
+			}
+
+			&.day {
+				height: 20px;
+				line-height: 20px;
+				width: 20px;
+				border: 1px solid #bbbbbb;
+				box-shadow: inset 1px 1px 1px #f9f9f9;
+				@include linearGradient(#ededed,#dedede);
+				font-size: 12px;
+				color: #666;
+			}
+
+			&.day:hover,
+			&.hour:hover,
+			&.minute:hover,
+			&.second:hover {
+				background: $bs-datetimepicker-btn-hover-bg;
+				box-shadow: none;
+				cursor: pointer;
+				color: white;
+			}
+
+			&.old,
+			&.new {
+				//color: $bs-datetimepicker-alternate-color;
+			}
+
+			&.active,
+			&.active:hover {
+				box-shadow: inset 1px 0px 0px darken($btn-warning-bg, 15%);
+				border-color: darken($btn-warning-bg, 15%);
+				background: $btn-warning-bg;
+				color: $bs-datetimepicker-active-color;
+				text-shadow: $bs-datetimepicker-text-shadow;
+			}
+
+			&.disabled,
+			&.disabled:hover {
+				color: $bs-datetimepicker-disabled-color;
+				cursor: not-allowed;
+			}
+
+			span {
+				display: inline-block;
+				width: 54px;
+				height: 54px;
+				line-height: 54px;
+				margin: 0px;
+				cursor: pointer;
+				border-radius: $bs-datetimepicker-border-radius;
+				@include border-bottom-radius(4px);
+
+				&:hover {
+					text-decoration: none;
+				  	color: white;
+				  	background: $bs-datetimepicker-btn-hover-bg;
+				}
+
+				&.active {
+					background-color: $bs-datetimepicker-active-bg;
+					color: $bs-datetimepicker-active-color;
+					text-shadow: $bs-datetimepicker-text-shadow;
+				}
+
+				&.old {
+					color: $bs-datetimepicker-alternate-color;
+				}
+
+				&.disabled,
+				&.disabled:hover {
+					color: $bs-datetimepicker-disabled-color;
+					cursor: not-allowed;
+				}
+			}
+		}
+	}
+}

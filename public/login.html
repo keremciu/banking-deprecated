@@ -1,0 +1,228 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>ALJ - Home Banking</title>
+    <link rel="stylesheet" href="assets/stylesheets/global.css">
+    <link rel="icon" type="image/x-icon" href="assets/images/favicon.png" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+    
+  </head>
+  <body>
+    <div class="orientation">
+      <span>Bu uygulamayı mobil cihazlarda kullanabilmek için dikey konuma getirmelisiniz.</span>
+    </div>
+    <div id="app">
+      
+	<header role="banner" class="header">
+		<div class="container">
+			<div class="header__collapse">
+				<div class="row">
+					<h1 class="header__logo bigger">
+						<a href="/" class="centered">ALJ Finans</a>
+					</h1>
+				</div>
+			</div>
+		</div>
+	</header>
+	<!-- header -->
+
+      
+      <div id="content">
+        <div class="container">
+          
+	<div class="container row-centered">
+		<div class="login-container col-md-10 col-centered">
+			<div class="login-box padding-20">
+				<div class="clearfix">
+					<div class="col-md-7 padding-0">
+						<div role="tabpanel" class="login-panel styled-panel">
+							<!-- Nav tabs -->
+							<ul class="nav nav-tabs styled-tabs" role="tablist">
+								<li role="presentation" class="active col-xs-6 text-center">
+									<a href="#bireysel" aria-controls="bireysel" role="tab" data-toggle="tab"><i class="icon -personal"></i> Bireysel Müşteri</a>
+								</li>
+								<li role="presentation" class="col-xs-6 text-center">
+									<a href="#kurumsal" aria-controls="kurumsal" role="tab" data-toggle="tab"><i class="icon -business"></i> Kurumsal Müşteri</a>
+								</li>
+							</ul>
+							<!-- Tab panes -->
+							<div class="tab-content context-padding">
+								<div role="tabpanel" class="tab-pane active" id="bireysel">
+									<div class="row form-group line-height-36">
+										<form action="http://10.0.10.138:5000/password-send" class="form-action">
+											<label class="control-label text-right xs-text-center padding-0 col-md-2-5 col-xs-12" for="tckimlik">T.C. Kimlik No</label>
+											<div class="col-md-5 col-xs-12">
+												<input type="text" class="form-control" name="tckimlik" id="tckimlik">
+											</div>
+											<div class="col-md-4-5 col-xs-12 xs-margin-top">
+												<button data-loading-text="Şifre gönderiliyor..." type="submit" class="btn btn-warning btn-shadow btn-rounded btn-block btn-sender">
+												<i class="icon -smart-phone"></i> SMS Şifresi Gönder
+												</button>
+											</div>
+										</form>
+									</div>
+									<div class="row form-group line-height-36 password-actions hide">
+										<form action="http://10.0.10.138:5000/sms-send" class="form-action">
+											<label class="control-label text-right xs-text-center padding-0 col-md-2 col-xs-12" for="sifre">Telefonu Sec</label>
+											<div class="col-md-6 col-xs-12">
+												<div class="btn-group row" data-toggle="buttons">
+													<div class="col-md-6">
+														<label class="radio checked">
+									                        <span class="icons"><span class="first-icon fa fa-circle-o"></span><span class="second-icon fa fa-dot-circle-o"></span></span>
+									                        <span class="icons"><span class="first-icon fa fa-circle-o"></span><span class="second-icon fa fa-dot-circle-o"></span></span><input type="radio" name="optionsRadios" data-toggle="radio" id="optionsRadios1" value="option1">
+									                        <i></i>+90 539 206 33 06
+									                     </label>
+									                 </div>
+									                 <div class="col-md-6">
+									                     <label class="radio">
+									                        <span class="icons"><span class="first-icon fa fa-circle-o"></span><span class="second-icon fa fa-dot-circle-o"></span></span>
+									                        <span class="icons"><span class="first-icon fa fa-circle-o"></span><span class="second-icon fa fa-dot-circle-o"></span></span><input type="radio" name="optionsRadios" data-toggle="radio" id="optionsRadios2" value="option2">
+									                        <i></i>+44 532 506 23 99
+									                     </label>
+													</div>
+												</div>
+											</div>
+											<div class="col-md-4 col-xs-12 xs-margin-top">
+												<a href="#" data-loading-text="Şifre gönderiliyor..." class="btn btn-primary btn-shadow btn-rounded btn-block form-sender">
+													<i class="icon -login"></i> Telefona Gonder
+												</a>
+											</div>
+										</form>
+									</div>
+									<div class="row form-group line-height-36 sms-actions hide">
+										<form action="http://localhost:5000/login">
+											<label class="control-label text-right xs-text-center padding-0 col-md-2 col-xs-12" for="sifre">SMS Şifresi</label>
+											<div class="col-md-6 col-xs-12">
+												<input type="password" class="form-control" id="sifre">
+											</div>
+											<div class="col-md-4 col-xs-12 xs-margin-top">
+												<a href="index.html" class="btn btn-primary btn-shadow btn-rounded btn-block">
+													<i class="icon -login"></i> Giriş Yap
+												</a>
+											</div>
+										</form>
+									</div>
+									<div class="row form-group line-height-36 sms-actions hide">
+										<div class="col-md-8 nopr"></div>
+										<div class="col-md-4 nopr">
+											<a href="#" class="btn btn-regular btn-shadow btn-rounded btn-block">
+												<i class="icon -reload"></i> Temizle
+											</a>
+										</div>
+									</div>
+									<p class="help-block text-center sms-actions hide sms-counter">
+										Telefonunuza gelen şifreyi giriniz, Yeniden göndermek için <a href="#">tıklayınız</a>.
+										(<span class="counter" id="countdownitem"></span>)
+									</p>
+								</div>
+								<!-- Bireysel Tab End -->
+								<div role="tabpanel" class="tab-pane" id="kurumsal">
+									<div class="row form-group line-height-36">
+										<form class="form-action">
+											<label class="control-label text-right xs-text-center padding-0 col-md-2-5 col-xs-12" for="vergikimlik">Vergi Kimlik No</label>
+											<div class="col-md-5 col-xs-12">
+												<input type="email" class="form-control" id="vergikimlik">
+											</div>
+											<div class="col-md-4-5 col-xs-12 xs-margin-top">
+												<a href="#" class="btn btn-warning btn-shadow btn-rounded btn-block">
+													<i class="icon -smart-phone"></i> SMS Şifresi Gönder
+												</a>
+											</div>
+										</form>
+									</div>
+									<div class="row form-group line-height-36">
+										<form>
+											<label class="control-label text-right xs-text-center padding-0 col-md-2 col-xs-12" for="vergisifre">SMS Şifresi</label>
+											<div class="col-md-6 col-xs-12">
+												<input type="password" class="form-control" id="vergisifre">
+											</div>
+											<div class="col-md-4 col-xs-12 xs-margin-top">
+												<a href="#" class="btn btn-primary btn-shadow btn-rounded btn-block">
+													<i class="icon -login"></i> Giriş Yap
+												</a>
+											</div>
+										</form>
+									</div>
+									<div class="row form-group line-height-36">
+										<div class="col-md-8 nopr"></div>
+										<div class="col-md-4 nopr">
+											<a href="#" class="btn btn-regular btn-shadow btn-rounded btn-block">
+												<i class="icon -reload"></i> Temizle
+											</a>
+										</div>
+									</div>
+									<p class="help-block text-center">Telefonunuza gelen şifreyi giriniz, Yeniden göndermek için <a href="#">tıklayınız</a>. (45 saniye)</p>
+								</div>
+								<!-- Kurumsal Tab End -->
+							</div>
+							<!-- Tab panes End -->
+						</div>
+					</div>
+					<div class="col-md-5 xs-margin-top col-xs-12">
+						<div class="panel panel-default help-box styled-panel">
+							<div class="panel-heading">
+								<h4 class="collapser no-margin">
+								<i class="icon big -info"></i> <span>Yardım & Güvenlik</span>
+								<b class="caret big right outward xs-caret-top"></b>
+								</h4>
+							</div>
+							<div class="panel-body">
+								<h5 class="help-box-title row">
+								<i class="icon big -warning -color-warning col-md-1 col-xs-1"></i>
+								<span class="col-md-10 col-xs-10 light-font">Güvenlik için lütfen aşağıdaki uyarılara dikkat ediniz.</span>
+								</h5>
+								<ul class="help-box-list">
+									<li>
+										<h6 class="light-font">Giriş yapabilmeniz için cep telefonunuza iletilecek olan SMS şifresini ilgili alana giriniz.</h6>
+									</li>
+									<li>
+										<h6 class="light-font">Eğer giriş yapamazsanız 0 (216) 643 04 44 no’lu ALJ Finans Müşteri Hizmetlerini arayınız.</h6>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<!-- info-box End -->
+					</div>
+				</div>
+				<div class="alert alert-danger styled-alert margin-top-10 sms-actions hide">
+					<span class="outward-icon"><em><i class="icon -close-invert"></i></em></span>
+					Girilen T.C. Kimlik No hatalıdır. Lütfen kontrol ediniz.
+				</div>
+			</div>
+			<!-- login-box -->
+		</div>
+	</div>
+</div>
+
+        </div>
+      </div>
+    </div>
+    <!-- app -->
+    <footer role="footer" class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-5 col-xs-5-5 col-md-3 text-right customer-service"><h4><i class="icon -headset"></i> 0 216 623 0 444</h4></div>
+          <div class="col-xs-7 col-xs-7-5 col-md-6 text-center">
+            <div class="footer-navigation">
+              <a href="#">Güvenlik</a>
+              <a href="#">Kullanım Şartları</a>
+              <a href="#">İletişim</a>
+            </div>
+            <p>Copyright © 2015 ALJ Finans - Tüm Hakları Saklıdır.</p>
+          </div>
+          <div class="col-xs-2 col-md-3 text-left footer-ebulletin">
+            <a href="#ebultenlink" class="btn btn-rounded btn-regular margin-top-10">E-Bültene Üye Ol</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- bower:js -->
+    <script src="assets/javascripts/vendors.js"></script>
+    <!-- endinject -->
+    <script src="assets/javascripts/excluded.js"></script>
+    <script src="assets/javascripts/all.min.js"></script>
+    
+  </body>
+</html>

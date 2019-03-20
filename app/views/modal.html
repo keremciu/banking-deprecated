@@ -1,0 +1,26 @@
+{% set current_page = 'loading' %}
+{% extends 'layouts/base.html' %}
+{% block content %}
+	<!-- Button trigger modal -->
+	<button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
+	Statik Popup
+	</button>
+	<!-- Modal -->
+	<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Kapat"><span aria-hidden="true">&times;</span></button>
+					<h4 class="modal-title" id="myModalLabel">Baslik</h4>
+				</div>
+				<div class="modal-body">
+					Icerik
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-default" data-dismiss="modal">Kapat</button>
+					<button type="button" class="btn btn-primary">Kaydet</button>
+				</div>
+			</div>
+		</div>
+	</div>
+{% endblock %}

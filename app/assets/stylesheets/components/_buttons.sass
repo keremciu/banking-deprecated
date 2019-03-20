@@ -1,0 +1,42 @@
+.btn
+	font-size: 15px
+
+.btn.btn-shadow
+	border: 1px solid rgba(0,0,0,0)
+	box-shadow: 0px 1px 1px color(primary,dark), inset 0px 1px 0px color(primary,light)
+	&:hover
+		box-shadow: 0px 1px 1px color(primary,dark), inset 0px 1px 0px darken(color(primary,light), 8%)
+
+.btn.btn-warning.btn-shadow
+	box-shadow: 0px 1px 1px color(warning,dark), inset 0px 1px 0px color(warning,light)
+	&:hover
+		box-shadow: 0px 1px 1px color(warning,dark), inset 0px 1px 0px darken(color(warning,light), 15%)
+
+.btn.btn-regular.btn-shadow
+	box-shadow: inset 0px 1px 0px lighten(#537888, 15%)
+	&:hover
+		box-shadow: inset 0px 1px 0px lighten(#537888, 25%)
+
+.btn.btn-info.btn-shadow
+	box-shadow: 0px 1px 1px color(info,dark), inset 0px 1px 0px color(info,light)
+
+.btn.btn-rounded
+	border-radius: 14px
+
+.btn.btn-mini
+	padding: 4px 20px
+	font-size: 12px
+	i
+		font-size: 10px
+
+.btn.btn-big
+	padding: 8px 8px
+	font-size: 16px
+
+.btn.btn-regular
+	+linearGradient(#537888,#3f5865)
+	color: white
+
+.btn.btn-wide
+	padding: 10px 40px
+	font-weight: 900

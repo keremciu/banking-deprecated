@@ -1,0 +1,44 @@
+{% set current_page = 'applicants' %}
+{% extends 'layouts/base.html' %}
+{% block content %}
+	<div class="form-section col-md-12 clearfix applicant">
+		<div class="applicant-title text-center opacity-50">
+			<h4 class="light-font">Hayallerinizdeki otomobile ulaşmak için “Başvur” butonuna basmanız yeterli!</h4>
+			<div class="row">
+				<div class="applicant-input col-xs-6 col-centered">
+					<form>
+						<label class="control-label" for="tckimlik">T.C. Kimlik No:</label>
+						<input type="text" class="applicant-input__tag" name="tckimlik" id="tckimlik" readonly="readonly" value="99884312570">
+						<button type="submit" disable="disable" class="applicant-input__btn btn btn-warning btn-shadow btn-sender">Başvur</button>
+					</form>	
+				</div>
+			</div>
+		</div>
+		<div class="applicant-paper text-center">
+			<div class="applicant-paper__head clearfix">
+				<div class="applicant-paper__icon -bg-green"><i aria-label="plus" class="icon -plus"></i></div>
+			</div>
+			<div class="applicant-paper__title">
+				<h3 class="extrabold-font">BAYİ SEÇİMİ</h3>
+				<h4 class="price -color-green">36.000 TL</h4>
+				<p><strong>Başvurunuzla ilgilenmesini istediğiniz bayiyi seçiniz:</strong></p>
+				<p>
+					<select class="form-control">
+						<option>DERİNDERE MOTORLU ARAÇLAR SANAYİ VE TİCARET...</option>
+						<option>123123DERİNDERE MOTORLU ARAÇLAR SANAYİ VE TİCARET...</option>
+					</select>
+				</p>
+				<div class="dealer-info">
+					<h6><i class="icon -map-pin"></i> Bayinin Adresi</h6>
+					<p>ERGAZİ MAH.43368 ADA 3 NOLU PARSEL İSTANBUL YOLU ÜZERİ 9.KM FATİH SULTAN MEHMET BULVARI N:336  ANKARA</p>
+					<p>+90 (312) 293 00 00</p>
+				</div>
+				<p>
+					<button type="submit" class="btn btn-primary btn-shadow">
+						<i class="icon -forward"></i> Devam
+					</button>
+				</p>
+			</div>
+		</div>
+	</div>
+{% endblock %}

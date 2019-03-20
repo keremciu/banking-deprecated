@@ -1,0 +1,149 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>ALJ - Home Banking</title>
+    <link rel="stylesheet" href="assets/stylesheets/global.css">
+    <link rel="icon" type="image/x-icon" href="assets/images/favicon.png" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+    
+  </head>
+  <body>
+    <div class="orientation">
+      <span>Bu uygulamayı mobil cihazlarda kullanabilmek için dikey konuma getirmelisiniz.</span>
+    </div>
+    <div id="app">
+      
+        <header role="banner" class="header">
+          <div class="container">
+            <div class="header__collapse">
+              <div class="row">
+                <h1 class="header__logo col-xs-4">
+                  <a href="/">ALJ Finans</a>
+                </h1>
+                <ul class="nav-mobile-button show-xs">
+                  <li></li>
+                </ul>
+                <div class="header__user pull-right">
+                  <div class="header__user-name pull-left">
+                    <span>Hosgeldiniz, <strong>Terane Badalzadeasdfas,jfasdjfnaksdfnmlasdsdsd</strong></span>
+                  </div>
+                  <a class="btn btn-warning btn-shadow btn-rounded btn-mini pull-right" href="login.html"><i class="icon -sign-out"></i> Çıkış</a>
+                </div>
+                <div class="header__campaign pull-right">
+                  <h4>Hayalini kurduğun sürüş <strong>keyfine çok az kaldı!</strong></h4>
+                  <a class="btn btn-warning btn-shadow btn-keys btn-rounded btn-mini" href="applicants.html">Başvur</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </header>
+        <!-- header -->
+      
+      
+        <nav role="navigation" class="navigation">
+          <div class="container">
+            <ul class="clearfix">
+	<li><a href="/"><i class="icon -home"></i> <span>Anasayfa</span></a></li>
+	<li class="active"><a href="/applicants.html"><i class="icon -applicant"></i> <span>Başvurularım</span></a></li>
+	<li class="dropdown ">
+		<a href="#" id="dLabel2" data-toggle="dropdown" class="dropdown-toggle" role="button" aria-haspopup="true" aria-expanded="false"><i class="icon -service"></i> <span>İşlemlerim</span></a>
+		<ul class="dropdown-menu" aria-labelledby="dLabel2">
+			<li class="dropdown-submenu">
+				<a href="#" id="dLabel3">
+					<span>Ödeme Planı Değişikliği</span>
+				</a>
+				<ul class="dropdown-menu" aria-labelledby="dLabel3">
+					<li><a href="/payment_day_change.html">Ödeme Günü Değişikliği</a></li>
+					<li><a href="/payment_day_change.html">Vade Değişikliği</a></li>
+					<li><a href="/payment_day_change.html">Ara Ödeme Değişikliği</a></li>
+				</ul>
+			</li>
+			<li><a href="/contact_infos.html">İletişim Bilgileri Güncelleme</a></li>
+		</ul>
+	</li>
+	<li class="dropdown ">
+		<a href="#" id="dLabel" data-toggle="dropdown" class="dropdown-toggle" role="button" aria-haspopup="true" aria-expanded="false">
+			<i class="icon -search-result"></i>
+			<span>Sorgulamalar</span>
+		</a>
+		<ul class="dropdown-menu" aria-labelledby="dLabel">
+			<li><a href="/debt_inquiry.html">Borç Sorgulama</a></li>
+			<li><a href="/account_transactions_filter.html">Hesap Hareketleri</a></li>
+			<li><a href="/payment_channels.html">Ödeme Kanalları Bilgisi</a></li>
+			<li><a href="/pledge_inquiry.html">Araç Rehin Durumu</a></li>
+			<li><a href="/early_close_inquiry.html">Erken Kapama</a></li>
+			<li><a href="/receipt_info.html">Dekont Bilgileri (Taksit Dekontu)</a></li>
+		</ul>
+	</li>
+	<li><a href="/contracts.html"><i class="icon -contract"></i> <span>Sözleşmeler</span></a></li>
+	<li><a href="/petitions.html"><i class="icon -petition"></i> <span>Dilekçeler</span></a></li>
+	<li><a href="/campaings.html"><i class="icon -announce"></i> <span>Kampanyalar</span></a></li>
+	<li><a href="/contact.html"><i class="icon -phone"></i> <span>İletişim</span></a></li>
+</ul>
+          </div>
+        </nav>
+        <!-- navigation -->
+      
+      <div id="content">
+        <div class="container">
+          
+	<div class="form-section col-md-12 clearfix applicant">
+		<div class="applicant-title text-center opacity-50">
+			<h4 class="light-font">Hayallerinizdeki otomobile ulaşmak için “Başvur” butonuna basmanız yeterli!</h4>
+			<div class="row">
+				<div class="applicant-input col-xs-6 col-centered">
+					<form>
+						<label class="control-label" for="tckimlik">T.C. Kimlik No:</label>
+						<input type="text" class="applicant-input__tag" name="tckimlik" id="tckimlik" readonly="readonly" value="99884312570">
+						<button type="submit" disable="disable" class="applicant-input__btn btn btn-warning btn-shadow btn-sender">Başvur</button>
+					</form>	
+				</div>
+			</div>
+		</div>
+		<div class="applicant-paper text-center">
+			<div class="applicant-paper__head clearfix">
+				<div class="applicant-paper__icon -bg-green"><i aria-label="plus" class="icon -plus"></i></div>
+			</div>
+			<div class="applicant-paper__title">
+				<h3 class="extrabold-font">BAYİ SEÇİMİ YAPILDI</h3>
+				<h4 class="price -color-green">36.000 TL</h4>
+				<p><strong>Sayın Terane Badalzade,</strong></p>
+				<p class="dealer-name">DERİNDERE MOTORLU ARAÇLAR SANAYİ VE TİCARET ANONİM ŞİRKETİ</p>
+				<p><strong>İlgilendiğiniz kampanya ile ilgili seçtiğiniz bayi tarafından size en kısa zamanda geri dönüş yapılacaktır.</strong></p>
+				<p><strong>Teşekkür ederiz.</strong></p>
+			</div>
+		</div>
+	</div>
+
+        </div>
+      </div>
+    </div>
+    <!-- app -->
+    <footer role="footer" class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-5 col-xs-5-5 col-md-3 text-right customer-service"><h4><i class="icon -headset"></i> 0 216 623 0 444</h4></div>
+          <div class="col-xs-7 col-xs-7-5 col-md-6 text-center">
+            <div class="footer-navigation">
+              <a href="#">Güvenlik</a>
+              <a href="#">Kullanım Şartları</a>
+              <a href="#">İletişim</a>
+            </div>
+            <p>Copyright © 2015 ALJ Finans - Tüm Hakları Saklıdır.</p>
+          </div>
+          <div class="col-xs-2 col-md-3 text-left footer-ebulletin">
+            <a href="#ebultenlink" class="btn btn-rounded btn-regular margin-top-10">E-Bültene Üye Ol</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- bower:js -->
+    <script src="assets/javascripts/vendors.js"></script>
+    <!-- endinject -->
+    <script src="assets/javascripts/excluded.js"></script>
+    <script src="assets/javascripts/all.min.js"></script>
+    
+  </body>
+</html>

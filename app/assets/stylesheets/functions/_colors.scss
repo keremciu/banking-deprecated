@@ -1,0 +1,83 @@
+/**
+ *
+ * Button color
+ *
+ * @access public
+ * @author Shane
+ * @example
+ * background: #000;
+ * @since 1.0
+ *
+ */
+$colors: (
+  text: #004852,
+  link: #337ab7,
+  head: #364a52,
+  background: #333,
+  main: #00a6b7,
+  primary: (
+    base: #0094aa,
+    light: lighten(#0094aa, 7%),
+    dark:  darken(#0094aa, 15%)
+  ),
+  warning: (
+    base: #ff6600,
+    light: lighten(#ff6600, 10%),
+    dark:  darken(#ff6600, 15%)
+  ),
+  info: (
+    base: #9a6141,
+    light: lighten(#9a6141, 10%),
+    dark:  darken(#9a6141, 15%)
+  ),
+  danger: (
+    base: #990000,
+    light: lighten(#990000, 10%),
+    dark:  darken(#990000, 15%)
+  ),
+  green: (
+    base: #2cb845,
+    light: lighten(#2cb845, 10%),
+    dark:  darken(#2cb845, 15%)
+  )
+);
+
+/**
+    * @submodule Media Image [.media__img]
+    * @description Image container for media
+    */
+@function color($color-name, $color-variant:null) {
+  @if ($color-variant != null) {
+    @return map-get(map-get($colors, $color-name), $color-variant);
+  } @else {
+    @return map-get($colors, $color-name);
+  }
+}
+
+.-color-primary {
+  color: color(primary, base)
+}
+
+.-color-warning {
+  color: color(warning, base)
+}
+
+.-color-info {
+  color: color(info, base)
+}
+
+.-color-green {
+  color: color(green, dark) !important
+}
+
+.-bg-danger {
+  background: color(danger, base) !important
+}
+
+.-bg-green {
+  background: color(green, base) !important
+}
+
+.-bg-yellow {
+  background: #ebb81d !important
+}

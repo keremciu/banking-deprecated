@@ -1,0 +1,50 @@
+{% set current_page = 'contact' %}
+{% extends 'layouts/base.html' %}
+{% block content %}
+	<div class="form-section col-md-12 clearfix">
+		<div class="col-md-12 intend-padding">
+			<div class="row">
+				<div class="col-md-6">
+					<h3>Adres - Genel Müdürlük</h3>
+					<h4>ALJ Finansman A.Ş.</h4>
+					<p class="margin-top-20">Merkez Mah. Erenler Cad. No: 20 Çekmeköy 34782</p>
+					<p>İstanbul / Türkiye</p>
+					<hr/>
+					<h4>Telefon - Müşteri Hizmetleri</h4>
+					<p class="margin-top-20"><strong>Tel:</strong> 0 216 643 0 400</p>
+					<p><strong>Faks:</strong> 0 216 643 0 449</p>
+					<p><strong>ALJ Finans Müşteri Hizmetleri:</strong> 0 216 643 0 444</p>
+					<hr/>
+					<h4>E-Posta</h4>
+					<p class="margin-top-20">info@aljfinans.com</p>
+					<p>musterihizmetleri@aljfinans.com</p>
+				</div>
+				<div class="col-md-6">
+					<div id="map"></div>
+				</div>
+			</div>
+		</div>
+	</div>
+{% endblock %}
+{% block javascript %}
+	<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
+	<script type="text/javascript">
+	google.maps.event.addDomListener(window, 'load', init);
+	function init() {
+	
+		var mapOptions = {
+		zoom: 13,
+		center: new google.maps.LatLng(41.035469,29.161738),
+	styles: [{"featureType":"landscape.natural","elementType":"geometry.fill","stylers":[{"visibility":"on"},{"color":"#e0efef"}]},{"featureType":"poi","elementType":"geometry.fill","stylers":[{"visibility":"on"},{"hue":"#1900ff"},{"color":"#c0e8e8"}]},{"featureType":"road","elementType":"geometry","stylers":[{"lightness":100},{"visibility":"simplified"}]},{"featureType":"road","elementType":"labels","stylers":[{"visibility":"off"}]},{"featureType":"transit.line","elementType":"geometry","stylers":[{"visibility":"on"},{"lightness":700}]},{"featureType":"water","elementType":"all","stylers":[{"color":"#7dcdcd"}]}]
+	};
+		var mapElement = document.getElementById('map');
+		var map = new google.maps.Map(mapElement, mapOptions);
+		var marker = new google.maps.Marker({
+			position: new google.maps.LatLng(41.035469,29.161738),
+			map: map,
+			title: 'ALJ Finans'
+		});
+		}
+		</script>
+		
+	{% endblock %}

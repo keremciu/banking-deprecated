@@ -1,0 +1,28 @@
+{% set current_page = 'applicants' %}
+{% extends 'layouts/base.html' %}
+{% block content %}
+	<div class="form-section col-md-12 clearfix applicant">
+		<div class="applicant-title text-center">
+			<h4 class="light-font">Hayallerinizdeki otomobile ulaşmak için “Başvur” butonuna basmanız yeterli!</h4>
+			<div class="applicant-input__wrapper clearfix">
+				<div class="applicant-input col-xs-6 col-centered">
+					<form>
+						<label class="control-label" for="tckimlik">T.C. Kimlik No:</label>
+						<input type="text" class="applicant-input__tag" name="tckimlik" id="tckimlik" readonly="readonly" value="99884312570">
+						<button type="submit" class="applicant-input__btn btn btn-warning btn-shadow btn-sender">Başvur</button>
+					</form>	
+				</div>
+			</div>
+		</div>
+		<div class="applicant-paper text-center">
+			<div class="applicant-paper__head clearfix">
+				<div class="applicant-paper__icon"><i class="icon -envelope"></i></div>
+			</div>
+			<div class="applicant-paper__title">
+				<h3 class="extrabold-font">BAŞVURU YAPILABİLİR</h3>
+				<p class="lead">Yapılan başvurular kısa bir süre içerisinde sonuçlanacaktır.</p>
+				<p>Kredi başvurularınız ön onay aldığı takdirde<br/> bayi seçimi yaparak kolayca kredinizi kullanabilirsiniz.</p>
+			</div>
+		</div>
+	</div>
+{% endblock %}

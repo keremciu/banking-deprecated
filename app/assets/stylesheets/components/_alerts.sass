@@ -1,0 +1,106 @@
+.styled-alert
+	min-height:70px
+	line-height:20px
+	position: relative;
+	background: #f6f6f6
+	border: 0px
+	box-shadow: 0 1px 4px rgba(0, 0, 0, 0.27), 0 0 40px rgba(0, 0, 0, 0.06) inset
+	padding: 12px 0px 0px 60px
+	ul
+		margin: 0px
+		padding: 3px
+	ul li
+        list-style: none
+
+	&.alert-info
+		color: #6a7984
+
+.outward-icon
+	display: block
+	position: absolute
+	top: 10px
+	left: -4px
+	background: #6fa7af
+	margin: 0
+	color: #fff
+	width: 50px
+	height: 50px
+	line-height: 50px
+	text-align: center
+	text-indent: 0px
+	&:after
+		content: ' '
+		position: absolute
+		display: block
+		top: 0
+		right: -9px
+		border-top: 25px solid #6fa7af
+		border-right: 9px solid transparent
+		border-bottom: 25px solid #6fa7af
+
+	em
+		font-size: 22px
+		&:before,&:after
+			display: block;
+			position: absolute;
+			content: '';
+			width: 0;
+			height: 0;
+			border: 2px solid transparent
+			border-right-color: #4b7084
+			left: 0px
+
+		&:before
+			border-top-color: #4b7084
+			bottom: -4px;
+
+		&:after
+			border-bottom-color: #4b7084
+			top: -4px;
+	
+
+.alert-danger
+	color: #ed1c24
+	.outward-icon
+		background: #ed1c24
+		&:after
+			border-bottom-color: #ed1c24
+			border-top-color: #ed1c24
+		em
+			&:before,&:after
+				border-right-color: darken(#ed1c24,15%)
+			&:before
+				border-top-color: darken(#ed1c24,15%)
+			&:after
+				border-bottom-color: darken(#ed1c24,15%)
+
+.alert-success
+	color: darken(#34ba4d,15%)
+	.outward-icon
+		background: #34ba4d
+		&:after
+			border-bottom-color: #34ba4d
+			border-top-color: #34ba4d
+		em
+			&:before,&:after
+				border-right-color: darken(#34ba4d,15%)
+			&:before
+				border-top-color: darken(#34ba4d,15%)
+			&:after
+				border-bottom-color: darken(#34ba4d,15%)
+
+
+.alert-warning
+	.outward-icon
+		background: #F9A825
+		&:after
+			border-bottom-color: #F9A825
+			border-top-color: #F9A825
+		em
+			&:before, &:after
+				border-right-color: darken(#F9A825, 15%)
+			&:before
+				border-top-color: darken(#F9A825,15%)
+			&:after
+				border-bottom-color: darken(#F9A825,15%)
+				

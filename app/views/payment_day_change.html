@@ -1,0 +1,30 @@
+{% set current_page = 'payment_day_change' %}
+{% extends 'layouts/base.html' %}
+{% block content %}
+	<div role="tabpanel" class="tab-panel">
+		<!-- Nav tabs -->
+		<ul class="nav nav-tabs page-tabs" role="tablist">
+			<li role="presentation" class="active text-center">
+				<a href="#vadedegisikligi" aria-controls="vadedegisikligi" role="tab" data-toggle="tab">Vade Değişikliği</a>
+			</li>
+			<li role="presentation" class="text-center">
+				<a href="#odemegunudegisikligi" aria-controls="odemegunudegisikligi" role="tab" data-toggle="tab">Ödeme Günü Değişikliği</a>
+			</li>
+			<li role="presentation" class="text-center">
+				<a href="#araodemedegisikligi" aria-controls="araodemedegisikligi" role="tab" data-toggle="tab">Ara Ödeme Değişikliği</a>
+			</li>
+		</ul>
+		<!-- Tab panes -->
+		<div class="tab-content">
+			<div role="tabpanel" class="tab-pane active" id="vadedegisikligi">
+				{% include "page_partials/_expiry_change.html" %}
+			</div>
+			<div role="tabpanel" class="tab-pane" id="odemegunudegisikligi">
+				{% include "page_partials/_payment_day_change.html" %}
+			</div>
+			<div role="tabpanel" class="tab-pane" id="araodemedegisikligi">
+				{% include "page_partials/_interim_payment_change.html" %}
+			</div>
+		</div>
+	</div>
+{% endblock %}

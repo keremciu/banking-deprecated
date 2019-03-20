@@ -1,0 +1,65 @@
+{% set current_page = 'index' %}
+{% extends 'layouts/base.html' %}
+{% block content %}
+	<div class="form-section col-md-12 clearfix">
+		<div class="col-md-12 intend-padding">
+			<div class="row form-section-header">
+				<h4 class="light-font">Kredi Özet</h4>
+			</div>
+			<div class="row form-content">
+				{% for input in sozlesme_data %}
+					{% if input.width == "full" %}
+						{% set column = "col-md-12" %}
+						{% set label_column = "col-md-2 col-md-2-5" %}
+						{% set input_column = "col-md-9 col-md-9-5" %}
+					{% else %}
+						{% set column = "col-md-6" %}
+						{% set label_column = "col-md-5" %}
+						{% set input_column = "col-md-7" %}
+					{% endif %}
+					{% if input.addon %}
+						{% set input_class = "input-group" %}
+					{% else %}
+						{% set input_class = "" %}
+					{% endif %}
+					<div class="{{ column }}">
+						<div class="form-group row">
+							<label class="control-label {{ label_column }} line-height-36" for="{{ input.id }}">{{input.label}}</label>
+							{% if input.type == "select" %}
+								<div class="input-collapse {{ input_column }} line-height-36">
+									<select class="form-control" id="{{ input.id}}">
+										<option>1</option>
+										<option>2</option>
+										<option>3</option>
+										<option>4</option>
+									</select>
+								</div>
+							{% else %}
+								<div class="input-collapse {{ input_column }} line-height-36">
+									<div class="{{ input_class }}">
+										<input type="text" class="form-control" id="{{ input.id }}" value="{{ input.value }}" {{ input.state }}>
+										{% if input.addon %}
+											<span class="input-group-addon">{{ input.addon }}</span>
+										{% endif %}
+									</div>
+								</div>
+							{% endif %}
+						</div>
+					</div>
+				{% endfor %}
+			</div>
+			<div class="row button-row">
+				<div class="col-sm-6">
+					<a href="product_info.html" class="btn btn-primary btn-shadow pull-right">
+						<i class="icon -products"></i> Ürünleri Göster
+					</a>
+				</div>
+				<div class="col-sm-6">
+					<a href="payment_plan.html" class="btn btn-warning btn-shadow pull-left">
+						<i class="icon -invoice"></i> Ödeme Planı Göster
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>
+{% endblock %}

@@ -1,0 +1,31 @@
+{% set current_page = 'applicants' %}
+{% extends 'layouts/base.html' %}
+{% block content %}
+	<div class="form-section col-md-12 clearfix applicant">
+		<div class="applicant-title text-center opacity-50">
+			<h4 class="light-font">Hayallerinizdeki otomobile ulaşmak için “Başvur” butonuna basmanız yeterli!</h4>
+			<div class="row">
+				<div class="applicant-input col-xs-6 col-centered">
+					<form>
+						<label class="control-label" for="tckimlik">T.C. Kimlik No:</label>
+						<input type="text" class="applicant-input__tag" name="tckimlik" id="tckimlik" readonly="readonly" value="99884312570">
+						<button type="submit" disable="disable" class="applicant-input__btn btn btn-warning btn-shadow btn-sender">Başvur</button>
+					</form>	
+				</div>
+			</div>
+		</div>
+		<div class="applicant-paper text-center">
+			<div class="applicant-paper__head clearfix">
+				<div class="applicant-paper__icon -bg-green"><i aria-label="plus" class="icon -plus"></i></div>
+			</div>
+			<div class="applicant-paper__title">
+				<h3 class="extrabold-font">BAYİ SEÇİMİ YAPILDI</h3>
+				<h4 class="price -color-green">36.000 TL</h4>
+				<p><strong>Sayın Terane Badalzade,</strong></p>
+				<p class="dealer-name">DERİNDERE MOTORLU ARAÇLAR SANAYİ VE TİCARET ANONİM ŞİRKETİ</p>
+				<p><strong>İlgilendiğiniz kampanya ile ilgili seçtiğiniz bayi tarafından size en kısa zamanda geri dönüş yapılacaktır.</strong></p>
+				<p><strong>Teşekkür ederiz.</strong></p>
+			</div>
+		</div>
+	</div>
+{% endblock %}

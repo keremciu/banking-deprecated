@@ -1,0 +1,28 @@
+{% set current_page = 'loading' %}
+{% extends 'layouts/base.html' %}
+{% block content %}
+	<div class="form-section col-md-12 clearfix">
+		<div class="col-md-12 intend-padding">
+			<div class="row line-height-36">
+				<form>
+					<div class="form-section-header">
+						<h4 class="light-font">E-Posta Gönder</h4>
+					</div>
+					<div class="form-content">
+						<div class="row form-group">
+							<label class="control-label xs-text-center padding-0 col-md-2 col-xs-12 col-md-offset-2" for="sozlesmeno">E-Posta Adresi</label>
+							<div class="col-md-3 col-xs-12">
+								<div class="input-collapse">
+									<input type="text" class="form-control" name="email" id="email">
+								</div>
+							</div>
+							<div class="col-md-1 line-height-fix">
+								<a href="index.html" class="btn btn-primary btn-shadow"><i class="icon -envelope"></i> Gönder</a>
+							</div>
+						</div>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+{% endblock %}

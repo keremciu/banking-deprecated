@@ -1,0 +1,38 @@
+<ul class="clearfix">
+	<li{% if current_page == 'index'  %} class="active"{% endif %}><a href="/"><i class="icon -home"></i> <span>Anasayfa</span></a></li>
+	<li{% if current_page == 'applicants'  %} class="active"{% endif %}><a href="/applicants.html"><i class="icon -applicant"></i> <span>Başvurularım</span></a></li>
+	<li class="dropdown {% if current_page == 'payment_day_change' || current_page == 'contact_infos' %}active{% endif %}">
+		<a href="#" id="dLabel2" data-toggle="dropdown" class="dropdown-toggle" role="button" aria-haspopup="true" aria-expanded="false"><i class="icon -service"></i> <span>İşlemlerim</span></a>
+		<ul class="dropdown-menu" aria-labelledby="dLabel2">
+			<li class="dropdown-submenu">
+				<a href="#" id="dLabel3">
+					<span>Ödeme Planı Değişikliği</span>
+				</a>
+				<ul class="dropdown-menu" aria-labelledby="dLabel3">
+					<li><a href="/payment_day_change.html">Ödeme Günü Değişikliği</a></li>
+					<li><a href="/payment_day_change.html">Vade Değişikliği</a></li>
+					<li><a href="/payment_day_change.html">Ara Ödeme Değişikliği</a></li>
+				</ul>
+			</li>
+			<li><a href="/contact_infos.html">İletişim Bilgileri Güncelleme</a></li>
+		</ul>
+	</li>
+	<li class="dropdown {% if current_page == 'account_transactions_filter' || current_page == 'debt_inquiry' || current_page == 'payment_channels' || current_page == 'account_transactions' || current_page == 'pledge_inquiry' || current_page == 'early_close_inquiry' || current_page == 'receipt_info' %}active{% endif %}">
+		<a href="#" id="dLabel" data-toggle="dropdown" class="dropdown-toggle" role="button" aria-haspopup="true" aria-expanded="false">
+			<i class="icon -search-result"></i>
+			<span>Sorgulamalar</span>
+		</a>
+		<ul class="dropdown-menu" aria-labelledby="dLabel">
+			<li><a href="/debt_inquiry.html">Borç Sorgulama</a></li>
+			<li><a href="/account_transactions_filter.html">Hesap Hareketleri</a></li>
+			<li><a href="/payment_channels.html">Ödeme Kanalları Bilgisi</a></li>
+			<li><a href="/pledge_inquiry.html">Araç Rehin Durumu</a></li>
+			<li><a href="/early_close_inquiry.html">Erken Kapama</a></li>
+			<li><a href="/receipt_info.html">Dekont Bilgileri (Taksit Dekontu)</a></li>
+		</ul>
+	</li>
+	<li{% if current_page == 'contracts'  %} class="active"{% endif %}><a href="/contracts.html"><i class="icon -contract"></i> <span>Sözleşmeler</span></a></li>
+	<li{% if current_page == 'petitions'  %} class="active"{% endif %}><a href="/petitions.html"><i class="icon -petition"></i> <span>Dilekçeler</span></a></li>
+	<li{% if current_page == 'campaings'  %} class="active"{% endif %}><a href="/campaings.html"><i class="icon -announce"></i> <span>Kampanyalar</span></a></li>
+	<li{% if current_page == 'contact'  %} class="active"{% endif %}><a href="/contact.html"><i class="icon -phone"></i> <span>İletişim</span></a></li>
+</ul>

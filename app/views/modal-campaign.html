@@ -1,0 +1,46 @@
+{% set current_page = 'loading' %}
+{% extends 'layouts/base.html' %}
+{% block content %}
+	<!-- Button trigger modal -->
+	<button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#campaignmodal">
+	Kampanya Popup
+	</button>
+	<!-- Modal -->
+	<div class="modal fade modal-campaign" id="campaignmodal" tabindex="-1" role="dialog" aria-labelledby="campaignmodal">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Kapat"><span aria-hidden="true">&times;</span></button>
+					<h4 class="modal-title" id="campaignmodal">Yeni Kampanya Fırsatı</h4>
+				</div>
+				<div class="modal-body">
+					<div class="campaign-detail">
+						<div class="campaign-detail__head">
+							<h3 class="xs-full">TOYOTA HILUX’TA <br/>‘0 FAİZ’ KAMPANYASI</h3>
+						</div>
+						<div class="campaign-detail__content">
+							<div class="col-md-7 col-xs-12 pull-left campaign-file">
+								<img src="assets/images/campaign-image1.png" alt="kampanya adi" />
+							</div>
+							<div class="campaign-text">
+								<div class="text text-left">
+									<p class="lead">Yeni 2. el arabanıza hemen kavuşun diye büyük faiz indirimleri ALJ’de.</p>
+									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur commodo nisl a urna scelerisque, vitae sollicitudin tellus cursus. Integer quis imperdiet massa, vitae posuere erat.</p>
+									<p>Nulla ullamcorper posuere pretium. Cras sed tristique magna. Praesent mattis feugiat enim, quis vulputate justo elementum sed. Duis tempor pretium justo ut feugiat. In laoreet accumsan mauris, a dignissim dui malesuada sed.</p>
+									<p>Aliquam vitae malesuada lectus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent sagittis id nunc porttitor finibus. Nullam cursus quam non mi ultricies porttitor.</p>
+								</div>
+							</div>
+							<!-- campaign text ends -->
+						</div>
+					</div>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-default" data-dismiss="modal">İlgilenmiyorum</button>
+					<button type="button" class="btn btn-primary">Daha Sonra Hatırlat</button>
+					<button type="button" class="btn btn-primary">E-Posta Gönder</button>
+					<button type="button" class="btn btn-warning"><i class="icon -victory"></i> İlgileniyorum</button>
+				</div>
+			</div>
+		</div>
+	</div>
+{% endblock %}

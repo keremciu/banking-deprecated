@@ -1,0 +1,128 @@
+{% set current_page = 'contact_infos' %}
+{% extends 'layouts/base.html' %}
+{% block content %}
+	<div class="form-section col-md-12 clearfix">
+		<div class="col-md-12 intend-padding">
+			<div class="row line-height-36">
+				<form>
+					<div class="form-section-header">
+						<h4 class="light-font">İletişim Bilgileri Güncelleme</h4>
+					</div>
+					<div class="form-content">
+						<div class="row">
+							<div class="col-md-6">
+								<div class="row form-group">
+									<label class="control-label col-md-5 line-height-36" for="sozlesmeno">Adres Tipi</label>
+									<div class="input-collapse col-md-7 line-height-36">
+										<select class="form-control" id="sozlesmeno">
+											<option>İş</option>
+											<option>Ev</option>
+											<option>3</option>
+											<option>4</option>
+										</select>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-6">
+								<div class="row form-group">
+									<label class="control-label col-md-5 line-height-36" for="country">Ülke</label>
+									<div class="input-collapse col-md-7 line-height-36">
+										<select class="form-control" id="country">
+											<option>Türkiye</option>
+											<option>Amerika</option>
+											<option>İngiltere</option>
+											<option>İtalya</option>
+										</select>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-12">
+								<div class="row form-group">
+									<label class="control-label col-md-2 col-md-2-5 col-xs-12 line-height-36" for="address">Adres</label>
+									<div class="input-collapse col-md-9 col-md-9-5 col-xs-12 line-height-36">
+										<textarea class="form-control" id="address"></textarea>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-6">
+								<div class="row form-group">
+									<label class="control-label col-md-5 line-height-36" for="city">İl</label>
+									<div class="input-collapse col-md-7 line-height-36">
+										<select class="form-control" id="city">
+											<option>Istanbul</option>
+											<option>Ankara</option>
+											<option>Canakkale</option>
+											<option>Trabzon</option>
+										</select>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-6">
+								<div class="row form-group">
+									<label class="control-label col-md-5 line-height-36" for="state">İlçe</label>
+									<div class="input-collapse col-md-7 line-height-36">
+										<select class="form-control" id="state">
+											<option>Kadikoy</option>
+											<option>Levent</option>
+											<option>Beyoglu</option>
+											<option>Etiler</option>
+										</select>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-6">
+								<div class="row form-group">
+									<label class="control-label col-md-5 line-height-36" for="phone">Cep Telefonu</label>
+									<div class="input-collapse col-md-7 line-height-36">
+										<input type='text' class="form-control" id="phone" data-toggle="phone_mask" />
+									</div>
+								</div>
+							</div>
+							<div class="col-md-6">
+								<div class="row form-group">
+									<label class="control-label col-md-5 line-height-36" for="homephone">İş Telefonu</label>
+									<div class="input-collapse col-md-7 line-height-36">
+										<input type='text' class="form-control" id="homephone" data-toggle="phone_mask" />
+									</div>
+								</div>
+							</div>
+							<div class="col-md-6">
+								<div class="row form-group">
+									<label class="control-label col-md-5 line-height-36" for="email">E-Posta</label>
+									<div class="input-collapse col-md-7 line-height-36">
+										<input type='text' class="form-control" id="email" />
+									</div>
+								</div>
+							</div>
+							<div class="col-md-6">
+								<div class="row form-group">
+									<label class="control-label col-md-5 line-height-36" for="degisiklik">Dosya Yükle</label>
+									<div class="input-collapse col-md-7 line-height-36">
+										<div class="input-group file-group">
+											<input type="text" class="form-control" readonly>
+											<span class="input-group-btn">
+												<span class="btn btn-primary btn-file">Seç <input type="file" multiple></span>
+											</span>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</form>
+			</div>
+			<div class="row button-row text-center">
+				<div class="col-md-2 col-md-offset-5">
+					<a href="index.html" class="btn btn-big btn-block btn-primary btn-shadow"><i class="icon -save"></i> Kaydet</a>
+				</div>
+			</div>
+			<div class="alert alert-info styled-alert margin-top-20">
+				<span class="outward-icon"><em><i class="icon -info-invert"></i></em></span> Lütfen sistemimizde kayıtlı iletişim bilgilerinizi kontrol ederek, bilgi güncelleme talebinizi oluşturunuz.
+			</div>
+			<div class="alert alert-info styled-alert line-height-fix margin-top-20">
+				<span class="outward-icon"><em><i class="icon -info-invert"></i></em></span> Bireysel müşteri için adres güncellemesinin yapılabilmesi için güncel ikametgah (en fazla 30 günlük olmalıdır) veya adınıza son üç ay içerisinde düzenlenmiş elektrik, su, doğalgaz, telefon, internet vb. fatura veya e-fatura kopyasının ALJ Finans'a gönderilmesi gerekmektedir.
+			</div>
+		</div>
+	</div>
+	<!-- form-section ended -->
+{% endblock %}

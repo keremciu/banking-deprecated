@@ -1,0 +1,37 @@
+{% set current_page = 'product_info' %}
+{% extends 'layouts/base.html' %}
+{% block content %}
+	<div class="form-section col-md-12 clearfix">
+		<div class="col-md-12 intend-padding">
+			<div class="row table-responsive">
+				<table class="table table-striped table-styled mini-font" cellpadding="10">
+					<thead>
+						<tr>
+							<th class="left">Ürün Grubu</th>
+							<th>Ürün Tanımı</th>
+							<th>Marka</th>
+							<th>Model</th>
+							<th>Alt Model</th>
+							<th class="right">Plaka No</th>
+						</tr>
+					</thead>
+					<tbody>
+						{% for input in sozlesme_data %}
+							<tr>
+								<td class="left">Otomotiv</td>
+								<td>Binek Araç Otomobil</td>
+								<td>Toyota</td>
+								<td>Corolla</td>
+								<td>1.33 Life</td>
+								<td class="right">34 AA 9999</td>
+							</tr>
+						{% endfor %}
+					</tbody>
+				</table>
+			</div>
+			<div class="row button-row text-center">
+				<a href="index.html" class="btn btn-warning btn-shadow">Kredi Özet Bilgilerine Dön</a>
+			</div>
+		</div>
+	</div>
+{% endblock %}

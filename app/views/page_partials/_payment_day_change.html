@@ -1,0 +1,91 @@
+<div class="form-section col-md-12 clearfix">
+	<div class="col-md-12 intend-padding">
+		<div class="row">
+			<div class="col-md-6">
+				<div class="form-group row">
+					<label class="control-label col-md-5 line-height-36" for="sozlesmeno">Sözleşme No</label>
+					<div class="input-collapse col-md-7 line-height-36">
+						<select class="form-control" id="sozlesmeno">
+							<option>1</option>
+							<option>2</option>
+							<option>3</option>
+							<option>4</option>
+						</select>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-6">
+				<div class="form-group row">
+					<label class="control-label col-md-5 line-height-36" for="taksit">Taksit Tarihi</label>
+					<div class="input-collapse col-md-7 line-height-36">
+						<div class='input-group date' id='taksit' data-toggle="datepicker">
+							<input type='text' class="form-control" readonly="readonly" />
+							<span class="input-group-addon">
+								<span class="icon -calendar"></span>
+							</span>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-6">
+				<div class="form-group row">
+					<label class="control-label col-md-5 line-height-36" for="taksit">Taksit Tutari</label>
+					<div class="col-md-7">
+						<div class="input-collapse input-group line-height-36">
+							<input type="text" class="form-control" name="borctutari" id="borctutari" readonly="readonly">
+							<span class="input-group-addon">USD</span>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-6">
+				<div class="form-group row">
+					<label class="control-label col-md-5 line-height-36" for="yenitaksit">Yeni Taksit Tarihi</label>
+					<div class="input-collapse col-md-7 line-height-36">
+						<div class='input-group date' id='yenitaksit' data-toggle="datepicker">
+							<input type='text' class="form-control" />
+							<span class="input-group-addon">
+								<span class="icon -calendar"></span>
+							</span>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-6">
+				<div class="form-group row">
+					<label class="control-label col-md-5 line-height-36" for="degisiklik">Değişiklik Nedeni</label>
+					<div class="input-collapse col-md-7 line-height-36">
+						<select class="form-control" id="degisiklik">
+							<option>1</option>
+							<option>2</option>
+							<option>3</option>
+							<option>4</option>
+						</select>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-6">
+				<div class="row form-group">
+					<label class="control-label col-md-5 line-height-36" for="degisiklik">Değişiklik Talimatı</label>
+					<div class="input-collapse col-md-7 line-height-36">
+						<div class="input-group file-group">
+							<input type="text" class="form-control" readonly>
+							<span class="input-group-btn">
+								<span class="btn btn-primary btn-file">Seç <input type="file" multiple></span>
+							</span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="row button-row text-center">
+			<a href="index.html" class="btn btn-primary btn-shadow"><i class="icon -save"></i> Kaydet</a>
+			<a href="#" class="btn btn-warning btn-shadow"><i class="icon -close-invert"></i> Vazgeç</a>
+		</div>
+		<div class="alert alert-info styled-alert margin-top-20">
+			<span class="outward-icon"><em><i class="icon -info-invert"></i></em></span>
+			İşlem kaydınızın oluşturulmasını takiben <strong>ALJ Finans</strong> tarafından geçerli ödeme planı değerlendirilerek oluşturulacaktır.
+		</div>
+	</div>
+</div>
+<!-- form-section ended -->

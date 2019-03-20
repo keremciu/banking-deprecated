@@ -1,0 +1,170 @@
+#app
+  select:-webkit-autofill:focus,
+  select:-webkit-autofill:active,
+  select:-webkit-autofill,
+  input:-webkit-autofill,
+  input:-webkit-autofill:focus
+    -webkit-box-shadow:inset 0 1px 1px rgba(0,0,0,.075),inset 0 0 0 1px #c89585,inset 1px 1px 3px 1px #f7eae2, 0 0 0px 1000px white inset
+    // -webkit-text-fill-color: white !important;
+
+.orientation
+  display: none
+
+#app,.footer
+  .btn:focus,button:focus,button:active,.btn:active
+    outline: 0
+  a:focus, a:hover
+    text-decoration: none
+
+hr 
+	border-top-color: rgba(0,0,0,0.1)
+	border-bottom: 1px solid rgba(255,255,255,0.4)
+
+/* Internet explorer select style */
+select::-ms-expand
+  border:none
+  background: none
+  width: 13px
+
+.full-width
+  width: 100%
+
+.mask
+	position: fixed
+	top: 0
+	left: 0
+	z-index: 1000
+	background: rgba(0,0,0,0.8)
+	width: 100%
+	height: 100%
+
+.nav-mobile-button
+    display: none;
+    visibility: hidden;
+    list-style: none;
+    padding: 30px 30px 0 30px;
+    height: 40px;
+    width: 84px;
+    position: fixed;
+    top: 0;
+    right: 0;
+    margin: 0;
+    z-index: 1;
+    cursor: pointer;
+    li
+        background: #444;
+        height: 3px;
+        transition: .25s all;
+        &:before
+          content: '';
+          background: #444;
+          height: 3px;
+          position: relative;
+          top: -7px;
+          display: block;
+          transform-origin: 50% 50%;
+          transform: rotate(0deg) translate(0,0);
+          transition: .5s all;
+        &:after
+          content: '';
+          background: #444;
+          height: 3px;
+          position: relative;
+          top: 4px;
+          display: block;
+          transform-origin: 50% 50%;
+          transform: rotate(0deg) translate(0,0);
+          transition: .5s all;
+        &.nav-mobile-active
+          background: transparent;
+          &:before
+            transform: rotate(45deg) translate(4px, 4px);
+          &:after
+            transform: rotate(135deg) translate(-3px, 3px);
+
+.mini-text
+	font-size: 12px !important
+
+.light-font
+	font-weight: normal
+
+.bold-font
+	font-weight: bold
+
+.extrabold-font
+	font-weight: 900
+
+.fontsize22
+  font-size: 22px
+
+.fontsize26
+  font-size: 26px
+
+.margin-top-3
+  margin-top: 3px
+
+.margin-top-10
+	margin-top: 10px
+
+.margin-top-20
+	margin-top: 20px
+
+.margin-bottom-20
+	margin-bottom: 20px
+
+.context-padding
+	padding: 40px 12px
+
+.collapser
+	position: relative
+
+.opacity-50
+  opacity: 0.5
+
+.padding-0
+	padding: 0px !important
+
+.padding-20
+	padding: 20px !important
+
+.no-margin
+	margin: 0px
+
+.centered
+	margin-left: auto
+	margin-right: auto
+
+.control-label
+	cursor: pointer
+
+.line-height-fix,.styled-alert.line-height-fix
+	line-height: 1.2 !important
+
+.line-height-20
+  line-height: 17px !important
+
+.line-height-36
+	line-height: 36px !important
+
+.line-height-44
+  line-height: 44px !important
+
+.line-height-60
+  line-height: 60px !important
+
+.mini-font
+	font-size: 12px
+
+.intend-padding
+	width: 92%
+	margin: 0 auto
+	float: none
+
+.row-centered
+    text-align:center
+
+.col-centered
+    display:inline-block
+    float:none
+    text-align:left
+    margin-right:-4px

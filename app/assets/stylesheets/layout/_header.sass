@@ -1,0 +1,180 @@
+.header
+	&__collapse
+		width: 94%;
+		margin: 0 auto
+	&__logo
+		margin-top: 40px
+		a
+			display: block
+			width: 243px
+			height: 60px
+			background: url(../images/logo2.svg) no-repeat
+			background-size: 100% 100%
+			text-indent: -9999px
+
+		&.bigger
+			a
+				width: 365px
+				height: 90px
+
+	&__user
+		width: 300px
+		margin-top: 60px
+		// padding-bottom: 47px
+		&-name
+			display: inline-block
+			margin-right: 14px
+
+	&__campaign
+		width: 400px
+		height: 104px
+		margin-top: 30px
+		background: url(../images/header-campaign.png) no-repeat
+		background-size: 392px 104px
+		h4
+			font-weight: 400
+			font-size: 15px
+			margin-top: -16px
+			margin-bottom: 16px
+		strong
+			display: block
+
+.btn.btn-keys
+	font-weight: 700
+	padding: 4px 20px 4px 40px
+	font-size: 13px
+	position: relative
+	&:before
+		display: block
+		content: ""
+		background: url(../images/btn-keys-icon.png) no-repeat
+		background-size: 23px 28px
+		width: 23px
+		height: 28px
+		top: -7px
+		left: 14px
+		position: absolute
+
+.navigation
+	margin: 0px 0px 20px
+	height: 50px
+	.container > ul
+		margin: 0
+		padding: 0
+		list-style: none
+		> li
+			+make-md-column(1.5)
+			+make-xs-column(3)
+			padding:0
+			z-index: 8700
+			&.dropdown.open
+				z-index: 8800
+				.dropdown-menu
+					z-index: 8900
+			> a
+				+linearGradient(#32454c,#445e67)
+				display: block
+				width: 100%
+				padding: 10px 0px
+				color: white
+				border-top: 1px solid #32454c
+				border-bottom: 1px solid #29383e
+				border-right: 1px solid #29383e
+				box-shadow: inset 1px 1px 0px #5c6a70
+				white-space: nowrap
+				text-align: center
+				+transition(0.2s ease-out all)
+
+				&:hover, &:active
+					text-decoration: none
+					+linearGradient(#0094aa,#008093)
+					border-top-color:#33a2b3
+					border-bottom-color: 1px solid #004d58
+					border-right-color: 1px solid #008ba0
+					box-shadow: inset 1px 1px 0px #33a9bb
+
+				i
+					display: inline-block
+					width: 22px
+					vertical-align: middle
+					font-size: 18px
+					text-decoration: none
+
+				span
+					display: inline-block
+					line-height: 1
+					text-decoration: none
+
+
+			&.active
+				a
+					text-decoration: none
+					+linearGradient(#0094aa,#008093)
+					border-top-color:#33a2b3
+					border-bottom-color: 1px solid #004d58
+					border-right-color: 1px solid #008ba0
+					box-shadow: inset 1px 1px 0px #33a9bb
+					margin-top: -4px
+					padding: 14px 0px
+
+			&:first-child a
+				+border-left-radius(6px)
+
+			&:last-child a
+				+border-right-radius(6px)
+
+		> li.dropdown.open
+			> a
+				text-decoration: none
+				+linearGradient(#0094aa,#008093)
+				border-top-color:#33a2b3
+				border-bottom-color: 1px solid #004d58
+				border-right-color: 1px solid #008ba0
+				box-shadow: inset 1px 1px 0px #33a9bb
+
+		a,li>a:hover,li>a:focus
+			color: #FFFFFF;
+			line-height: 16px;
+
+		ul.dropdown-menu
+			background-color: transparent
+			margin-top: -1px
+			padding: 0
+			border: 0
+			box-shadow: none
+			z-index: 9000
+
+			li:first-child > a
+				border-top-left-radius: 10px
+
+			li:first-child > a
+				border-top-left-radius: 0
+				border-top-right-radius: 10px
+				border-top: none
+
+			li:last-child > a
+				border-bottom-right-radius: 10px;
+				border-bottom-left-radius: 10px;
+				border-bottom: none;
+				border-bottom: 2px solid rgba(0, 106, 122, 0.85);
+
+			> li > a
+				background:rgba(0, 148, 170, 0.85);
+				box-shadow: none;
+				border-bottom: 1px solid rgba(0, 0, 0, 0.20);
+				border-top: 1px solid rgba(255, 255, 255, 0.20);
+				padding: 10px 0px
+				padding-left: 28px;
+				padding-right: 28px;
+
+			li:first-child > a:hover, li:first-child > a:focus
+				border-top-left-radius: 0;
+				border-top-right-radius: 10px;
+
+			li:last-child > a:hover, li:last-child > a:focus
+				border-bottom-right-radius: 10px;
+				border-bottom-left-radius: 10px;
+
+			li > a:hover, li > a:focus
+				background-image: none;
+				background-color: rgba(0, 173, 199, 0.85);

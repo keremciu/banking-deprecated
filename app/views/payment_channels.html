@@ -1,0 +1,123 @@
+{% set current_page = 'payment_channels' %}
+{% extends 'layouts/base.html' %}
+{% block content %}
+	<div class="form-section col-md-12 clearfix">
+		<div class="col-md-12 intend-padding">
+			<div class="alert alert-success line-height-fix styled-alert margin-top-20">
+				<span class="outward-icon"><em><i class="icon -tick-invert"></i></em></span>
+				Değerli Müşterimiz Terane Badalzade ALJ Finans'tan kredi kullandığınız için teşekkür ederiz.<br/>
+				Kredi Taksit ödemelerinizi aşağıdaki kanallar aracılığı ile gerçekleştirebilirsiniz.
+			</div>
+			<h3>Anlaşmalı Ödeme Noktaları</h3>
+			<hr/>
+			<ol>
+				<li>Yapı ve Kredi Bankası A.Ş.</li>
+				<li>Türkiye İş Bankası A.Ş.</li>
+				<li>Türkiye Garanti Bankası A.Ş.</li>
+				<li>PTT Online İşlem Noktaları</li>
+			</ol>
+			<h3>Ödeme Kanalları</h3>
+			<hr/>
+			<h4>Otomatik Ödeme</h4>
+			<p>Bankalara vereceğiniz otomatik ödeme talimatı ile ödemelerinizi gerçekleştirebilirsiniz.</p>
+			<h4>Vezneden Ödeme</h4>
+			<p>İlgili bankaların tüm şubelerinin veznelerinden sadece T.C. Kimlik Numaranızı (TCKN) veya Vergi Kimlik Numaranızı (VKN) belirterek kredi taksitlerinizi ödeyebilirsiniz.</p>
+			<h4>ATM'den Ödeme</h4>
+			<p>İş Bankası ATM'lerınden "Firma/Kurum Ödemeleri, Talimatlı Fatura Ödeme" ve Garanti Bankası ATM'lerinden "Ödemeler, Fatura Ödeme, TCKN/VKN" ile ödemelerinizi yapabilirsiniz.</p>
+			<h4>İnternet Şubesi'nden Ödeme</h4>
+			<p>Bankaların internet şubesi işlem menülerinden aşağıda belirtilen adımları izleyerek kredi taksit ödemelerinizi gerçekleştirebilirsiniz.</p>
+			<br/>
+			<br/>
+			<div role="tabpanel" class="tab-panel clearfix">
+				<!-- Nav tabs -->
+				<ul class="nav nav-tabs page-tabs" role="tablist">
+					<li role="presentation" class="active text-center">
+						<a href="#yapikredi" aria-controls="yapikredi" role="tab" data-toggle="tab">Yapı Kredi Bankası</a>
+					</li>
+					<li role="presentation" class="text-center">
+						<a href="#isbank" aria-controls="isbank" role="tab" data-toggle="tab">İş Bankası</a>
+					</li>
+					<li role="presentation" class="text-center">
+						<a href="#garanti" aria-controls="garanti" role="tab" data-toggle="tab">Garanti Bankası</a>
+					</li>
+				</ul>
+				<!-- Tab panes -->
+				<div class="tab-content">
+					<div role="tabpanel" class="tab-pane active" id="yapikredi">
+						<div class="form-section mini col-md-10 clearfix">
+							<div class="col-md-12 intend-padding">
+								<div class="row">
+									<div class="col-md-6">
+										<h5>İnternet Şubesi Adımları</h5>
+										<hr/>
+										<ol>
+											<li>Anında Fatura Ödeme</li>
+											<li>Fatura Ödeme</li>
+											<li>Fatura Tipi / Diğer (ALJ Finansman)</li>
+											<li>Abone No: TCKN / VNK</li>
+										</ol>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div role="tabpanel" class="tab-pane" id="isbank">
+						<div class="form-section mini col-md-10 clearfix">
+							<div class="col-md-12 intend-padding">
+								<div class="row">
+									<div class="col-md-6">
+										<h4>İnternet Şubesi Adımları</h4>
+										<hr/>
+										<ol>
+											<li>Ödemeler</li>
+											<li>Fatura</li>
+											<li>Anında / Talimatlı Fatura Ödeme</li>
+											<li>Firma Kodu: 1430 (ALJ Finansman)</li>
+											<li>Kurum: ALJ Finans</li>
+										</ol>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div role="tabpanel" class="tab-pane" id="garanti">
+						<div class="form-section mini col-md-10 clearfix">
+							<div class="col-md-12 intend-padding">
+								<div class="row">
+									<div class="col-md-6">
+										<h4>İnternet Şubesi Adımları</h4>
+										<hr/>
+										<ol>
+											<li>Ödemeler</li>
+											<li>Fatura</li>
+											<li>Fatura / Abone No ile Fatura Ödeme</li>
+											<li>Kurum Tipi: Tüketici Finansmanı</li>
+											<li>Kurum: ALJ Finans</li>
+										</ol>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div><!-- tabpanel -->
+			<hr/>
+			<h4>EFT ile Ödeme</h4>
+			<p>Kredinizin taksit ödemelerini açıklama alanına ALJ Finans Sözleşme Numaranızı 28436 yazdırarak ve aşağıdaki bilgileri beyan ederek gerçekleştirebilirsiniz.</p>
+			<hr/>
+			<h6>Alıcı Banka Şube IBAN No</h6>
+			<p>Yapı ve Kredi Bankası A.Ş. Anadolu Yakası Kurumsal</p>
+			<p>TL  - TR72 0006 7010 0000 0069 0006 25</p>
+			<p>USD - TR31 0006 7010 0000 0069 0370 59</p>
+			<p>EUR - TR38 0006 7010 0000 0069 0380 00</p>
+			<h6>Alıcı Ünvanı ALJ Finansman A.Ş.</h6>
+			<hr/>
+			<h4>PTT Online İşlem Noktalarından ile Ödeme</h4>
+			<p>TCKN / VNK beyan ederek ödemenizi gerçekleştirebilirsiniz.</p>
+			<hr/>
+			<br>
+			<p>Aracınızı mutlu günlerde kullanmanızı diler, hizmetimiz ile ilgili her türlü soru ve görüşünüz için 0216 643 0 444 ALJ Finans Müşteri Hizmetleri'ne ulaşabileceğiniz belirtmek isteriz.</p>
+			
+		</div>
+	</div>
+{% endblock %}
